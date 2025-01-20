@@ -24,7 +24,11 @@ public class Game {
 	private String platforms;
 	private Double score;
 	private String imgUrl;
-	private String shorDescription;
+	
+	@Column(columnDefinition = "TEXT")
+	private String shortDescription;
+	
+	@Column(columnDefinition = "TEXT")
 	private String longDescription;
 
 	
@@ -42,7 +46,7 @@ public class Game {
 		this.platforms = platforms;
 		this.score = score;
 		this.imgUrl = imgUrl;
-		this.shorDescription = shorDescription;
+		this.shortDescription = shorDescription;
 		this.longDescription = longDescription;
 	}
 
@@ -103,11 +107,11 @@ public class Game {
 	}
 
 	public String getShorDescription() {
-		return shorDescription;
+		return shortDescription;
 	}
 
 	public void setShorDescription(String shorDescription) {
-		this.shorDescription = shorDescription;
+		this.shortDescription = shorDescription;
 	}
 
 	public String getLongDescription() {
