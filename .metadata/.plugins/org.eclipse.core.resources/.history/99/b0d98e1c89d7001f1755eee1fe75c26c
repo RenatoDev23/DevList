@@ -1,0 +1,5 @@
+package com.Dev.dslist.dto;
+
+public class GameMinDTO {
+
+}
