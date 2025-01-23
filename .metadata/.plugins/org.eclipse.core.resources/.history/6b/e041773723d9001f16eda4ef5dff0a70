@@ -1,0 +1,10 @@
+package com.Dev.dslist.entities;
+
+public class Belonging {
+	
+	private BelongingBK id;
+	
+	private Integer position;
+	
+
+}
